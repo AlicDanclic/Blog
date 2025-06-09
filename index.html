@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EternoPax -- 个人博客</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="CopyRight.png">
+</head>
+<body>
+  <div class="container">
+    <!-- 左侧栏 -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-content">
+        <img src="avatar.jpg" alt="个人图像" class="avatar">
+        <h2 id="username">EternoPax</h2>
+        
+        <!-- 搜索功能 -->
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="输入关键词搜索...">
+          <button id="searchButton">搜索</button>
+        </div>
+        
+        <nav class="navigation">
+          <a data-section="software">软件项目</a>
+          <a data-section="hardware">硬件项目</a>
+          <a data-section="learning">学习文档</a>
+          <a data-section="website">个人网站</a>
+        </nav>
+        <a href="https://github.com/AlicDanclic" target="_blank" class="github-link">GitHub 连接</a>
+      </div>
+    </div>
+
+    <!-- 右侧内容区 -->
+    <div class="content" id="content">
+      <!-- 动态加载的内容区域 -->
+      <div class="placeholder">点击左侧链接加载内容...</div>
+    </div>
+  </div>
+
+  <!-- 侧边栏切换按钮 -->
+  <div class="sidebar-toggle" id="sidebarToggle"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

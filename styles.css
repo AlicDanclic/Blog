@@ -1,0 +1,279 @@
+/* 通用样式 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed; /* 固定左侧栏 */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: left 0.3s ease-in-out; /* 平滑过渡 */
+  z-index: 1000; /* 确保在最上层 */
+}
+
+.sidebar.active {
+  left: 0; /* 显示左侧栏 */
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* 图像和名称居中 */
+.sidebar .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.sidebar h2 {
+  margin: 0 auto 20px auto;
+  font-size: 1.5em;
+  color: #ecf0f1;
+  text-align: center;
+}
+
+/* 搜索功能样式 */
+.search-container {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#searchInput {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#searchButton {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+  background-color: #2980b9;
+}
+
+/* 导航链接居中 */
+.sidebar .navigation {
+  text-align: center;
+}
+
+.sidebar .navigation a {
+  display: block;
+  color: #ecf0f1;
+  padding: 10px 0;
+  border-bottom: 1px solid #34495e;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.sidebar .navigation a:hover {
+  background-color: #34495e;
+}
+
+/* GitHub链接样式 */
+.sidebar .github-link {
+  display: block;
+  color: #ecf0f1;
+  padding: 10px 0;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: auto; /* 确保链接在底部 */
+  text-align: center;
+  margin-bottom: 20px; /* 与下边框对齐，留出20px */
+}
+
+.sidebar .github-link:hover {
+  background-color: #34495e;
+}
+
+/* 右侧内容区 */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 300px; /* 确保右侧内容在左侧栏右侧显示 */
+  overflow-y: auto; /* 允许右侧内容区滚动 */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: margin-left 0.3s ease-in-out; /* 平滑过渡 */
+}
+
+.content-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.content-section h3 {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.content-section p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.overview-box {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-bottom: 15px;
+}
+
+.overview-box:hover {
+  transform: translateY(-5px);
+}
+
+.overview-box h4 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.overview-box p {
+  color: #7f8c8d;
+  font-size: 0.9em;
+}
+
+.placeholder {
+  text-align: center;
+  color: #95a5a6;
+  padding: 20px;
+}
+
+/* 错误信息样式 */
+.error {
+  background-color: #ffebee;
+  border: 1px solid #ffcdd2;
+  padding: 20px;
+  border-radius: 8px;
+  color: #c62828;
+}
+
+.error button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* 下载按钮样式 */
+.downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.download-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #2980b9;
+  text-decoration: none;
+}
+
+/* 链接样式 */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 侧边栏切换按钮 */
+.sidebar-toggle {
+  width: 30px;
+  height: 50px;
+  background-color: rgba(76, 189, 255, 0.5);
+  position: fixed;
+  top: 100px;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+  transition: background-color 0.3s ease-in-out;
+  display: none; /* 初始隐藏 */
+  border-radius: 0 25px 25px 0; /* 半圆形状 */
+  z-index: 999;
+}
+
+.sidebar-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 响应式设计：针对手机设备 */
+@media (max-width: 768px) {
+  .sidebar {
+    left: -300px; /* 初始隐藏 */
+  }
+
+  .sidebar.active {
+    left: 0; /* 显示左侧栏 */
+  }
+
+  .content {
+    margin-left: 0; /* 右侧内容全屏显示 */
+    padding: 60px 10px 10px; /* 避免顶部栏影响显示 */
+  }
+
+  .sidebar-toggle {
+    display: flex; /* 显示侧边栏切换按钮 */
+  }
+}

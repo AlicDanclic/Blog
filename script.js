@@ -1,28 +1,16 @@
 // 全局 overview 对象
 const overview = {
   software: [
-    { title: "Alic CodeManager", desc: "一个简单的离线密码管理器,可轻松实现文档移植。", dir: [".zip", ".pdf"] },
-    { title: "MoreQ", desc: "让一起更加快速。", dir: [".zip", ".pdf"] },
+    { title: "test", desc: "test", dir: [] },
   ],
   hardware: [
-    { title: "EternoPax Linker", desc: "模仿Ultralink的一个小linker。", dir: [".zip", ".pdf"] },
-    { title: "串口模拟八路舵机", desc: "电赛助力板1,让IO口更宽松。", dir: [".zip", ".pdf"] },
-    { title: "天空星扩展板", desc: "基于立创天空星的电赛扩展板,轻松实现硬件连接。", dir: [".zip", ".pdf"] },
+    { title: "test", desc: "test", dir: [] },
   ],
   learning: [
-    { title: "PID入门", desc: "还在更新。", dir: [".zip", ".pdf"] },
-    { title: "数电模电信号与系统", desc: "大二上的学习笔记。", dir: [] },
-    { title: "DataSheet怎么读", desc: "硬件设计必读书目。", dir: [".zip", ".pdf"] },
-    { title: "高速PCB", desc: "持续学习中。", dir: [] },
-    { title: "电赛集训", desc: "电赛入门书籍。", dir: [ ".pdf"] },
-    { title: "通信协议", desc: "从零开始速通UART,IIC,SPI,CAN。", dir: [".zip", ".pdf"] },
-    { title: "基于STM32的功能实现", desc: "为电赛助力。", dir: [".zip", ".pdf"] },
-    { title: "2025 TI", desc: "更适合大众选手的电赛模拟赛题。", dir: [".md", ".pdf"] },
-    { title: "DMA", desc: "简单入门一下DMA", dir: [".md", ".pdf"] },
+    { title: "test", desc: "test", dir: [] },
   ],
   website: [
-    { title: "BigVing", desc: "个人自用导航界面。", dir: [".zip", ".pdf"] },
-    { title: "个人博客", desc: "这是一个轻易上手的个人博客网页!", dir: [".zip", ".pdf"] },
+    { title: "test", desc: "test", dir: [] },
   ],
 };
 
